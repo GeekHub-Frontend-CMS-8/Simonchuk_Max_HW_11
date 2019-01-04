@@ -1,0 +1,74 @@
+.section__our-team
+  background: url("../img/bg-team.png") no-repeat center/cover
+  padding-top: 71px
+  padding-bottom: 71px
+  &--description
+    margin-bottom: 27px
+  &--line
+    background: url("../img/line.png")
+  &--top-text
+    color: #3e3d3d
+    margin-bottom: 56px
+  &--box
+    display: flex
+    justify-content: space-around
+    @media screen and (max-width: 880px)
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      flex-wrap: wrap
+  &--img
+    max-width: 271px
+    width: 100%
+    height: 338px
+    @media screen and (max-width: 880px)
+      margin-bottom: 30px
+  @each $img in first-card-team, second-card-team, third-card-team
+    &--#{$img}-icon
+      background-image: url('../img/#{$img}.png')
+  &--hover-relative
+    max-width: 271px
+    width: 100%
+    position: relative
+  &--hover-absolute
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    opacity: 0
+    top: 8px
+    right: 8px
+    left: 8px
+    bottom: 8px
+    @media screen and (max-width: 880px)
+      bottom: 38px
+    &:hover
+      background-color: #f6f6f6
+      opacity: 0.82
+  &--hover-title
+    color: #3e3d3d
+    font-family: Montserrat,sans-serif
+    font-size: 13px
+    font-weight: 400
+    line-height: 18px
+    margin-left: 19px
+  &--hover-text
+    color: #3e3d3d
+    font-family: "Crimson Text",sans-serif
+    font-size: 14px
+    font-style: italic
+    line-height: 18px
+    margin-left: 19px
+    margin-bottom: 15px
+  &--hover-border
+    max-width: 146px
+    width: 100%
+    height: 2px
+    background-color: #515151
+    margin-bottom: 18px
+    margin-left: 19px
+  &--social
+    margin: 0 0 39px 19px
+  &--links
+    color: #3e3d3d
+    text-decoration: none

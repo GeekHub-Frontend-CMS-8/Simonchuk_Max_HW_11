@@ -1,0 +1,53 @@
+.section__services
+  padding-top: 69px
+  padding-bottom: 85px
+  background: url("../img/bg-services.png") no-repeat center/cover
+  &--description
+    color: #ffffff
+    margin-bottom: 27px
+  &--line
+    background: url("../img/divider.png")
+  &--top-text
+    color: #cfcfcf
+    margin-bottom: 70px
+  &--box
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 1130px)
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      flex-wrap: wrap
+  &--img
+    max-width: 270px
+    width: 100%
+    height: 385px
+    @media screen and (max-width: 1130px)
+      margin-bottom: 30px
+  @each $img in first-card, second-card, third-card, fouth-card
+    &--#{$img}-icon
+      background-image: url('../img/#{$img}.png')
+  &--top-title
+    max-width: 105px
+    width: 100%
+    height: 29px
+    color: #d8d8d8
+    font-family: Montserrat,sans-serif
+    font-size: 13px
+    font-weight: 700
+    line-height: 18px
+    text-transform: uppercase
+    margin: 0 auto 29px
+    text-align: center
+    padding-top: 51px
+  &--text
+    max-width: 203px
+    width: 100%
+    height: 228px
+    color: #d8d8d8
+    font-family: "Crimson Text - Roman",sans-serif
+    font-size: 14px
+    font-weight: 400
+    text-align: center
+    margin: 0 auto
+    line-height: 21px

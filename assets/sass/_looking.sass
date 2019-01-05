@@ -1,0 +1,43 @@
+.section__looking
+  padding-top: 35px
+  padding-bottom: 39px
+  background-color: #2d2d2f
+  &--box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 1026px)
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      flex-wrap: wrap
+  &--compas
+    background: url("../img/compas.png")
+    max-width: 109px
+    width: 100%
+    height: 104px
+    @media screen and (max-width: 1026px)
+      margin-bottom: 30px
+  &--title
+    color: #d8d8d8
+    font-family: Montserrat,sans-serif
+    font-size: 16px
+    font-weight: bold
+    line-height: 18px
+    margin-bottom: 19px
+  &--description
+    max-width: 716px
+    width: 100%
+    @media screen and (max-width: 1026px)
+      margin-bottom: 30px
+  &--text
+    color: #888888
+    font-family: "Crimson Text",sans-serif
+    font-size: 16px
+    font-style: italic
+    line-height: 20px
+  &--link
+    padding: 14px 33px
+    border: 2px solid #e3e3e3
+    color: #e3e3e3
+

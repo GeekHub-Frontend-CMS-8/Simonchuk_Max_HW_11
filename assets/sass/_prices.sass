@@ -1,0 +1,71 @@
+.section__prices
+  padding-top: 68px
+  padding-bottom: 92px
+  background-color: #e3e3e3
+  &--description
+    color: #3e3d3d
+    margin-bottom: 27px
+  &--line
+    background: url("../img/line.png")
+  &--top-text
+    color: #3e3d3d
+    margin-bottom: 80px
+  &--box
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 1596px)
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      flex-wrap: wrap
+  &--card
+    max-width: 369px
+    width: 100%
+    height: 571px
+    background-color: #ffffff
+    margin-bottom: 30px
+  &--title
+    padding-top: 46px
+    text-align: center
+    color: #3e3d3d
+    font-family: Montserrat,sans-serif
+    font-size: 13px
+    font-weight: 400
+    margin-bottom: 40px
+  &--img
+    max-width: 232px
+    width: 100%
+    height: 50px
+    margin: 0 auto 24px
+  @each $img in first-picture, second-picture, third-picture
+    &--#{$img}-icon
+      background-image: url('../img/#{$img}.png')
+  &--dollar
+    color: #3e3d3d
+    font-family: Montserrat,sans-serif
+    font-size: 28px
+    font-weight: 400
+    margin-left: 135px
+  &--price
+    color: #3e3d3d
+    font-family: Montserrat,sans-serif
+    font-size: 70px
+    font-weight: 700
+    text-align: center
+    margin-bottom: 20px
+    margin-top: -17px
+  &--text
+    text-align: center
+    color: #3e3d3d
+    font-family: "Crimson Text",sans-serif
+    font-size: 16px
+    font-style: italic
+    line-height: 30px
+  &--buttons
+    margin-top: 51px
+  &--link
+    padding: 14px 43px 14px 34px
+    border: 2px solid #3e3d3d
+    color: #3e3d3d
+
+

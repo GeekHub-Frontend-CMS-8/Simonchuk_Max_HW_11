@@ -1302,6 +1302,12 @@ html {
     font-size: 14px;
     font-style: italic;
     text-decoration: none; }
+  .section__posts-sidebar--img {
+    display: block; }
+  .section__posts-sidebar--block-flickr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px; }
 
 .section__post-sidebar {
   padding-top: 112px;
